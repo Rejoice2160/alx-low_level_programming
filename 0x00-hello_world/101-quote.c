@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include 
 /**
  * main - Entry point
  *  Description: print a quote using write function
@@ -10,6 +10,6 @@
 int main(void)
 {
 char quo[] = "and that piece of art is useful\" - Dora Korpa, 2015-10-19\n";
-write(1, quo, 59);
+write(1, quo, 59); [Anything]
 return (1);
 }
