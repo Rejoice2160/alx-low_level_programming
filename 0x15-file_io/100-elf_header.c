@@ -264,7 +264,6 @@ exit(98);
 * ELF header at the start of an ELF file.
 * @argc: The number of arguments supplied to the program.
 * @argv: An array of pointers to the arguments.
-*
 * Return: 0 on success.
 *
 * Description: If the file is not an ELF File or
@@ -297,7 +296,6 @@ dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 exit(98);
 }
 
-check_elf(header->e_ident);
 print_magic(header->e_ident);
 print_class(header->e_ident);
 print_data(header->e_ident);
@@ -307,6 +305,5 @@ print_abi(header->e_ident);
 print_type(header->e_type, header->e_ident);
 print_entry(header->e_entry, header->e_ident);
 
-close_elf(o);
 return (0);
 }
