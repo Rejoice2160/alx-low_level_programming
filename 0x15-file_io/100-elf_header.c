@@ -1,3 +1,8 @@
+/*
+ * File: 100-elf_header.c
+ * Auth: Rejoice
+ */
+
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
